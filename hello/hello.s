@@ -5,7 +5,7 @@ _start: .global _start
 	@ r7=4 r0 r1 r2
 	mov r0, #1 @ fd <- stdout
 	adr r1, msg @ pstr <- *msg
-	mov r2, #14 @ len <- 14
+	mov r2, #29 @ len <- 14
 	mov r7, #4 @ syscall <- sys_write
 	swi 0 @ system call
 
@@ -16,5 +16,5 @@ _start: .global _start
 	swi 0 @ system call
 
 msg:
-	.asciz "Hello, world!\n"
+	.asciz "Hello, World! edit by MuLin.\n"
 	.end
