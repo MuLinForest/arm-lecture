@@ -27,13 +27,13 @@ fibonacci:
 
 	mov R3, #0
 	mov R0, #1
-	sub R4, #2
-for:
-	mov R5, R0
-	adds R0, R3, R0
-	mov R3, R5
+	sub R4, #1
+for: 
 	subs R4, #1
-	cmp R4, #0
+	itttt ge
+	movge R5, R0
+	addge R0, R3, R0
+	movge R3, R5
 	bge for
 
 	pop {r3, r4, r5, pc}		@EPILOG
